@@ -1,27 +1,24 @@
-# TestApp
+# Angular APP
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+### Steps to reproduce
 
-## Development server
+* Generate a new project with:
+    * Angular CLI: 14.2.1
+    * Node: 16.14.0
+    * Package Manager: npm 8.5.3
+    * OS: darwin x64
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+`ng new test-app --skip-install`
 
-## Code scaffolding
+* Change the Angular version in package.json to `^14.2.0`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Run `npm i`
 
-## Build
+* Add the localize package with `ng add @angular/localize` as described [here](https://angular.io/guide/i18n-common-add-package)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* Modify the angular.json to add the following:
 
-## Running unit tests
+   * [Define locales in the build configuration](https://angular.io/guide/i18n-common-merge#define-locales-in-the-build-configuration)
+   * [Generate application variants for each locale](https://angular.io/guide/i18n-common-merge#generate-application-variants-for-each-locale)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* See the modifications done in the angular.json in the last commit
