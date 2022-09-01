@@ -2,13 +2,11 @@
 
 ### Steps to reproduce
 
-* Generate a new project with:
+* Generate a new project (`ng new test-app --skip-install`) with:
     * Angular CLI: 14.2.1
     * Node: 16.14.0
     * Package Manager: npm 8.5.3
     * OS: darwin x64
-
-`ng new test-app --skip-install`
 
 * Change the Angular version in package.json to `^14.2.0`
 
