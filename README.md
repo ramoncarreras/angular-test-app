@@ -19,4 +19,18 @@
    * [Define locales in the build configuration](https://angular.io/guide/i18n-common-merge#define-locales-in-the-build-configuration)
    * [Generate application variants for each locale](https://angular.io/guide/i18n-common-merge#generate-application-variants-for-each-locale)
 
+* Install @angular/pwa pacakge as described [here](https://angular.io/guide/service-worker-getting-started#adding-a-service-worker-to-your-project)
+
 * See the modifications done in the angular.json in the last commit
+
+* Serve the app and see the following error:
+
+```
+[webpack-dev-middleware] Error: ENOENT: no such file or directory, readdir '<project-directory>/test-app/dist/test-app/'
+    at createError (<project-directory>/test-app/node_modules/memfs/lib/volume.js:128:17)
+    at Volume.readdirBase (<project-directory>/test-app/node_modules/memfs/lib/volume.js:1415:19)
+    at Immediate.<anonymous> (<project-directory>/test-app/node_modules/memfs/lib/volume.js:695:33)
+    at processImmediate (node:internal/timers:466:21) {
+  code: 'ENOENT'
+}
+```
